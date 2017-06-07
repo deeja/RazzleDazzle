@@ -38,9 +38,6 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Hedgehog Development\Razl\HedgehogDevelopment.Razl.Service.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Hedgehog Development\Razl\log4net.DLL</HintPath>
-    </Reference>
     <Reference Include="Razl">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Hedgehog Development\Razl\Razl.exe</HintPath>
       <Private>True</Private>

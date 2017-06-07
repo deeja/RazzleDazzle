@@ -9,7 +9,6 @@
     using HedgehogDevelopment.Razl.CommandLine;
     using HedgehogDevelopment.Razl.CommandLine.OperationRunners;
 
-    using log4net;
 
     class Program
     {
@@ -24,14 +23,13 @@
             new SetPropertyValueRunner()
         };
 
-        private static ILog Log => log4net.LogManager.GetLogger(typeof(Program));
+        // private static ILog Log => log4net.LogManager.GetLogger("main");
 
         static void Main(string[] args)
         {
+            Console.WriteLine("RAZZLE DAZZLE!!");
+            Console.WriteLine("Usage: razzledazzle.exe SCRIPTPATH");
 
-            Log.Info("RAZZLE DAZZLE!!");
-            Log.Info("Usage: razzledazzle.exe SCRIPTPATH [-p]");
-            
 
             int exitCode;
             try
@@ -40,24 +38,24 @@
             }
             catch (Exception exception)
             {
-                Log.Error("Error!", exception);
+                Console.WriteLine("Error! " + exception);
                 exitCode = 11;
             }
 
             Environment.Exit(exitCode);
         }
-        
+
         private static int RunTool(string scriptFile)
         {
             if (string.IsNullOrEmpty(scriptFile))
             {
-                Log.Info("No script file specified");
+                Console.WriteLine("No script file specified");
                 return 1;
             }
 
             if (!File.Exists(scriptFile))
             {
-                Log.Info($"Script file not found: '{scriptFile}'");
+                Console.WriteLine($"Script file not found: '{scriptFile}'");
                 return 2;
             }
 
@@ -76,7 +74,7 @@
                 commandRunner?.Run(command);
             }
         }
-        
+
 
     }
 }

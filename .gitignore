@@ -279,3 +279,4 @@ build/
 *_Debug.xml
 *_Release.xml
 TestResults.xml
+*.xml
