@@ -11,8 +11,8 @@ The build of this requires an install of Hedgehog Razl on the builder's computer
 
 ## Running RazzleDazzle
 Either: 
-- drop into the Razl folder and run from there
-- pack up the `/bin` folder with all referenced files, and run from wherever you wish. 
+- drop into the Razl folder and run from there `C:\Program Files (x86)\Hedgehog Development\Razl`
+- after the build, pack up the `/bin/Release` folder with all referenced files, and run from wherever you wish. 
 
 ## Usage
 `> RazzleDazzle.exe scriptfile.xml`
