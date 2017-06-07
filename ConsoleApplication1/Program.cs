@@ -9,6 +9,11 @@
     using HedgehogDevelopment.Razl.CommandLine;
     using HedgehogDevelopment.Razl.CommandLine.OperationRunners;
 
+    using log4net;
+    using log4net.Appender;
+    using log4net.Config;
+    using log4net.Layout;
+    using log4net.Repository.Hierarchy;
 
     class Program
     {
@@ -23,14 +28,15 @@
             new SetPropertyValueRunner()
         };
 
-        // private static ILog Log => log4net.LogManager.GetLogger("main");
+        private static ILog Log => log4net.LogManager.GetLogger("main");
 
         static void Main(string[] args)
         {
-            Console.WriteLine("RAZZLE DAZZLE!!");
-            Console.WriteLine("Usage: razzledazzle.exe SCRIPTPATH");
-
-
+            Console.WriteLine("RAZZLE DAZZLE!! - Razl Script runner");
+            Console.WriteLine("Uses the existing RAZL program, but cuts out the annoying jumps across console screens");
+            Console.WriteLine("Razl Script runner");
+            Console.WriteLine("Usage: razzledazzle.exe script.xml");
+            
             int exitCode;
             try
             {
@@ -38,7 +44,7 @@
             }
             catch (Exception exception)
             {
-                Console.WriteLine("Error! " + exception);
+                Log.Error("Error!", exception);
                 exitCode = 11;
             }
 
