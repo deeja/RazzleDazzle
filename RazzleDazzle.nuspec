@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RazzleDazzleRazl</id>
+    <version>1.0.0</version>
+    <title>Razzle Dazzle</title>
+    <authors>deeja</authors>
+    <owners></owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Razl Script Runner</description>
+  </metadata>
+  <files>
+    <file src="build/**" target="RazzleDazzle" />
+  </files>
+</package>
