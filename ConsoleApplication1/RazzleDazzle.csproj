@@ -35,11 +35,15 @@
   <ItemGroup>
     <Reference Include="HedgehogDevelopment.Razl.Service, Version=3.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Hedgehog Development\Razl\HedgehogDevelopment.Razl.Service.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Hedgehog Development\Razl\HedgehogDevelopment.Razl.Service.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="log4net, Version=1.2.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Hedgehog Development\Razl\log4net.DLL</HintPath>
+    </Reference>
     <Reference Include="Razl">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Hedgehog Development\Razl\Razl.exe</HintPath>
+      <HintPath>C:\Program Files (x86)\Hedgehog Development\Razl\Razl.exe</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
